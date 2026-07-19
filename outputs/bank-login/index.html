@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A responsive bank login page practice project." />
+    <title>Nord Bank — Sign in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="brand-panel" aria-label="Nord Bank introduction">
+        <a class="brand" href="#" aria-label="Nord Bank home"><span class="brand-mark">N</span> NORD</a>
+        <div class="brand-copy">
+          <p class="eyebrow">Banking, made calm</p>
+          <h1>Your money.<br /><em>Your momentum.</em></h1>
+          <p class="intro">Simple, secure banking that gives you more room to focus on what matters next.</p>
+        </div>
+        <div class="trust-card">
+          <span class="shield" aria-hidden="true">✦</span>
+          <div><strong>Protected by design</strong><p>Your session is encrypted and monitored.</p></div>
+        </div>
+        <p class="panel-footer">© 2026 Nord Bank · Built for everyday confidence</p>
+      </section>
+
+      <section class="login-panel" aria-labelledby="login-title">
+        <div class="form-wrap">
+          <div class="top-link">New to Nord? <a href="#">Open an account</a></div>
+          <div class="form-heading">
+            <p class="eyebrow">Welcome back</p>
+            <h2 id="login-title">Sign in to your account</h2>
+            <p>Enter your details to continue securely.</p>
+          </div>
+          <form id="login-form" novalidate>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <p class="error" id="email-error" aria-live="polite"></p>
+
+            <div class="label-row"><label for="password">Password</label><a href="#">Forgot password?</a></div>
+            <div class="password-field">
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required minlength="8" />
+              <button class="show-password" type="button" aria-label="Show password">Show</button>
+            </div>
+            <p class="error" id="password-error" aria-live="polite"></p>
+
+            <label class="check-row"><input id="remember" type="checkbox" /><span>Remember me for 30 days</span></label>
+            <button class="primary-button" type="submit">Sign in securely <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="divider"><span>or</span></div>
+          <button class="passkey-button" type="button"><span aria-hidden="true">◉</span> Sign in with a passkey</button>
+          <p class="help">Need help? <a href="#">Contact support</a></p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
